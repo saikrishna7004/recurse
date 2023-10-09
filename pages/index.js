@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const HomePage = () => {
 	// Set your target date and time for the treasure hunt
-	const targetDate = new Date('2023-10-09T18:00:00').getTime();
+	const targetDate = new Date('2023-10-09T19:00:00').getTime();
 	const [countdown, setCountdown] = useState('');
 	const [startButtonDisabled, setStartButtonDisabled] = useState(true); // Initialize as disabled
 
@@ -34,6 +34,7 @@ const HomePage = () => {
 			<h1 className='title'>Online Treasure Hunt</h1>
 			<div className='countdown'>
 				<p>The Hunt begins in: {countdown}</p>
+				<p>The hunt starts at 7:00 pm today</p>
 			</div>
 		</div>
 	);
