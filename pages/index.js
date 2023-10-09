@@ -36,7 +36,7 @@ const HomePage = () => {
 				<p>The Hunt begins in: {countdown}</p>
 				<p>The hunt starts at 7:00 pm today</p>
 			</div>
-			<Link href={startButtonDisabled?'/':"https://recurse-navraas.vercel.app/"} className={`button ${startButtonDisabled ? 'disabled' : ''}`}>Start Hunt</Link>
+			<Link href={"https://recurse-navraas.vercel.app/"}>Main Site</Link>
 		</div>
 	);
 };
