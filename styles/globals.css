@@ -67,12 +67,11 @@ h3, h4, h5, h6{
 .container {
 	text-align: center;
 	margin: 20px auto;
-	max-width: 500px;
+	max-width: 600px;
 }
 
 .countdown {
 	font-size: 36px;
-	margin: 20px 0;
 }
 
 .buttons {
