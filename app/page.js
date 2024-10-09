@@ -48,7 +48,7 @@ export default function Home() {
                             <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-pink-600 via-pink-700 to-pink-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white w-full">Vision</h3>
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-pink-400 group-hover:text-white">Vision</h3>
                                     <p className="text-gray-400 group-hover:text-white my-4">
                                         To cultivate a vibrant coding culture at KMIT by organizing regular coding workshops, hackathons, and collaborative projects that empower students to develop their technical skills.
                                     </p>
@@ -59,7 +59,7 @@ export default function Home() {
                             <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white">Mission</h3>
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-blue-400 group-hover:text-white">Mission</h3>
                                     <p className="text-gray-400 group-hover:text-white my-4">
                                         To build a strong, innovative coding community at KMIT, contributing to impactful projects and establishing the college as a hub of technical excellence and creativity in the coding world.
                                     </p>
@@ -70,7 +70,7 @@ export default function Home() {
                             <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-orange-600 via-orange-700 to-orange-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white">Values</h3>
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-orange-400 group-hover:text-white">Values</h3>
                                     <p className="text-gray-400 group-hover:text-white my-4">
                                         We believe in the power of collaboration and mutual support. Our club fosters an inclusive environment where members help each other grow, pushing the boundaries of what’s possible through teamwork and continuous learning.
                                     </p>
