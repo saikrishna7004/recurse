@@ -1,101 +1,130 @@
+import { Button } from "@/components/ui/button";
+import { faBullseye, faEye, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    return (
+        <div>
+            <main>
+                <div className="px-8">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                    {/* First Section */}
+                    <section className="container mx-auto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1193 1963" className="absolute top-0 left-0 w-full h-full">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style={{ stopColor: '#00ff00', stopOpacity: 1 }} />
+                                    <stop offset="100%" style={{ stopColor: '#009900', stopOpacity: 1 }} />
+                                </linearGradient>
+                                <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" style={{ stopColor: '#00cc00', stopOpacity: 1 }} />
+                                    <stop offset="100%" style={{ stopColor: '#003300', stopOpacity: 1 }} />
+                                </linearGradient>
+                            </defs>
+
+                            {/* Bubbles/Circles with random positions and radii */}
+                            <circle className="bubble" cx="40%" cy="50%" r="50" fill="url(#grad2)" />
+                            <circle className="bubble" cx="-40%" cy="35%" r="60" fill="url(#grad2)" />
+                            <circle className="bubble" cx="120%" cy="15%" r="30" fill="url(#grad1)" />
+                            <circle className="bubble" cx="85%" cy="70%" r="45" fill="url(#grad2)" />
+                            <circle className="bubble" cx="160%" cy="80%" r="40" fill="url(#grad1)" />
+                            <circle className="bubble" cx="160%" cy="40%" r="55" fill="url(#grad2)" />
+                            <circle className="bubble" cx="50%" cy="90%" r="30" fill="url(#grad1)" />
+                            <circle className="bubble" cx="-60%" cy="80%" r="42" fill="url(#grad2)" />
+                            <circle className="bubble" cx="30%" cy="25%" r="33" fill="url(#grad2)" />
+                        </svg>
+                        <div className="m-auto text-center z-10 h-[80vh] content-center">
+                            <h1 className="lg:text-9xl md:text-5xl text-4xl font-semibold my-4">RECURSE</h1>
+                            <p className="text-lg my-4">The Technical Club of KMIT</p>
+                            <Button asChild variant="default" className="px-6 py-3 my-4 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white">
+                                <Link href="https://www.instagram.com/recurse.official" target="_blank">Follow us on Instagram</Link>
+                            </Button>
+                        </div>
+
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-center">
+                            {/* Card 1 - Vision */}
+                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                                <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-pink-600 via-pink-700 to-pink-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
+                                <div className="relative z-10">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white w-full">Vision</h3>
+                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                        To cultivate a vibrant coding culture at KMIT by organizing regular coding workshops, hackathons, and collaborative projects that empower students to develop their technical skills.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Card 2 - Mission */}
+                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                                <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
+                                <div className="relative z-10">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white">Mission</h3>
+                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                        To build a strong, innovative coding community at KMIT, contributing to impactful projects and establishing the college as a hub of technical excellence and creativity in the coding world.
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Card 3 - Values */}
+                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                                <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-orange-600 via-orange-700 to-orange-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
+                                <div className="relative z-10">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-green-400 group-hover:text-white">Values</h3>
+                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                        We believe in the power of collaboration and mutual support. Our club fosters an inclusive environment where members help each other grow, pushing the boundaries of what’s possible through teamwork and continuous learning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Second Section: Past Events */}
+                    <section className="mt-24 container mx-auto">
+                        <h2 className="text-3xl font-semibold mb-8 sticky top-0 bg-neutral-950 py-8 z-10">Past Events</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {Array.from({ length: 8 }).map((_, idx) => (
+                                <div key={idx} className="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                                    <Image
+                                        src={`https://picsum.photos/seed/event${idx}/500/300`}
+                                        alt={`Event ${idx}`}
+                                        width={500}
+                                        height={300}
+                                        className="rounded-lg mb-4"
+                                    />
+                                    <h3 className="text-xl font-semibold mb-2">Event {idx + 1}</h3>
+                                    <p className="text-gray-400">
+                                        A brief recap of what happened in the event, key highlights, and achievements.
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Third Section: Projects Showcase */}
+                    <section className="my-24 container mx-auto">
+                        <h2 className="text-3xl font-semibold mb-8 sticky top-0 bg-neutral-950 py-8 z-10">Projects Showcase</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {Array.from({ length: 9 }).map((_, idx) => (
+                                <div key={idx} className="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                                    <Image
+                                        src={`https://picsum.photos/seed/project${idx}/500/300`}
+                                        alt={`Project ${idx}`}
+                                        width={500}
+                                        height={300}
+                                        className="rounded-lg mb-4"
+                                    />
+                                    <h3 className="text-xl font-semibold mb-2">Project {idx + 1}</h3>
+                                    <p className="text-gray-400">
+                                        This is a brief description of the project. It showcases the tech used and the challenges solved.
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                </div>
+            </main>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
