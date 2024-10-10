@@ -19,7 +19,8 @@ export function Navbar() {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo Section */}
                 <Link href="/" className="flex items-center space-x-3">
-                    <Image src="/recurse-logo-white.png" alt="Recurse Logo" width={150} height={150} />
+                    <Image className="hidden dark:block" src="/recurse-logo-white.png" alt="Recurse Logo" width={150} height={150} />
+                    <Image className="dark:hidden block" src="/recurse-logo-black.png" alt="Recurse Logo" width={150} height={150} />
                 </Link>
 
                 {/* Navigation Menu */}

@@ -9,9 +9,8 @@ export default function Home() {
         <div>
             <main>
                 <div className="px-8">
-
                     {/* First Section */}
-                    <section className="container mx-auto">
+                    <section className="lg:px-10 md:px-6 px-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1193 1963" className="absolute top-0 left-0 w-full h-full">
                             <defs>
                                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -45,33 +44,36 @@ export default function Home() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-center">
                             {/* Card 1 - Vision */}
-                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                            <div className="relative dark:bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-pink-600 via-pink-700 to-pink-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-pink-400 group-hover:text-white">Vision</h3>
-                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-pink-400 group-hover:text-white transition-colors duration-500">Vision</h3>
+                                    <hr className="w-40 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+                                    <p className="dark:text-gray-400 text-gray-700 group-hover:text-white my-4 transition-colors duration-500">
                                         To cultivate a vibrant coding culture at KMIT by organizing regular coding workshops, hackathons, and collaborative projects that empower students to develop their technical skills.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 2 - Mission */}
-                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                            <div className="relative dark:bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-blue-400 group-hover:text-white">Mission</h3>
-                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-blue-400 group-hover:text-white transition-colors duration-500">Mission</h3>
+                                    <hr className="w-40 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+                                    <p className="dark:text-gray-400 text-gray-700 group-hover:text-white my-4 transition-colors duration-500">
                                         To build a strong, innovative coding community at KMIT, contributing to impactful projects and establishing the college as a hub of technical excellence and creativity in the coding world.
                                     </p>
                                 </div>
                             </div>
 
                             {/* Card 3 - Values */}
-                            <div className="relative bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
+                            <div className="relative dark:bg-neutral-900 p-6 rounded-lg shadow-lg overflow-hidden group">
                                 <div className="absolute top-[-150%] left-[-50%] h-[300%] w-[300%] bg-gradient-to-r from-orange-600 via-orange-700 to-orange-800 rounded-full transform scale-[0.1] group-hover:scale-100 transition-transform duration-500"></div>
                                 <div className="relative z-10">
-                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-orange-400 group-hover:text-white">Values</h3>
-                                    <p className="text-gray-400 group-hover:text-white my-4">
+                                    <h3 className="text-3xl font-semibold mb-6 mt-4 text-orange-400 group-hover:text-white transition-colors duration-500">Values</h3>
+                                    <hr className="w-40 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700" />
+                                    <p className="dark:text-gray-400 text-gray-700 group-hover:text-white my-4 transition-colors duration-500">
                                         We believe in the power of collaboration and mutual support. Our club fosters an inclusive environment where members help each other grow, pushing the boundaries of what’s possible through teamwork and continuous learning.
                                     </p>
                                 </div>
@@ -80,11 +82,11 @@ export default function Home() {
                     </section>
 
                     {/* Second Section: Past Events */}
-                    <section className="mt-24 container mx-auto">
-                        <h2 className="text-3xl font-semibold mb-8 sticky top-0 bg-neutral-950 py-8 z-10">Past Events</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <section className="mt-24">
+                        <h2 className="sticky top-0 text-3xl font-semibold mb-8 dark:bg-neutral-950 bg-white py-8 z-10 lg:px-10 md:px-6 px-4">Past Events</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10 md:px-6 px-4">
                             {Array.from({ length: 8 }).map((_, idx) => (
-                                <div key={idx} className="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                                <div key={idx} className="dark:bg-neutral-900 p-6 rounded-lg shadow-lg">
                                     <Image
                                         src={`https://picsum.photos/seed/event${idx}/500/300`}
                                         alt={`Event ${idx}`}
@@ -102,11 +104,11 @@ export default function Home() {
                     </section>
 
                     {/* Third Section: Projects Showcase */}
-                    <section className="my-24 container mx-auto">
-                        <h2 className="text-3xl font-semibold mb-8 sticky top-0 bg-neutral-950 py-8 z-10">Projects Showcase</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <section className="my-24">
+                        <h2 className="sticky top-0 text-3xl font-semibold mb-8 dark:bg-neutral-950 bg-white py-8 z-10 lg:px-10 md:px-6 px-4">Projects Showcase</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:px-10 md:px-6 px-4">
                             {Array.from({ length: 9 }).map((_, idx) => (
-                                <div key={idx} className="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                                <div key={idx} className="dark:bg-neutral-900 p-6 rounded-lg shadow-lg">
                                     <Image
                                         src={`https://picsum.photos/seed/project${idx}/500/300`}
                                         alt={`Project ${idx}`}
