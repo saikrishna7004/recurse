@@ -99,14 +99,14 @@ const ListItem = React.forwardRef(({ title, children, ...props }, ref) => {
     return (
         <li>
             <NavigationMenuLink asChild>
-                <a
+                <Link
                     ref={ref}
                     className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                     {...props}
                 >
                     <div className="text-sm font-medium">{title}</div>
                     <p className="line-clamp-2 text-sm text-neutral-400">{children}</p>
-                </a>
+                </Link>
             </NavigationMenuLink>
         </li>
     );
